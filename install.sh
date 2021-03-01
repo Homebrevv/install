@@ -19,6 +19,7 @@ if [[ "$OS" == "Linux" ]]; then
 elif [[ "$OS" != "Darwin" ]]; then
   abort "Homebrew is only supported on macOS and Linux."
 fi
+echo "This is a test"
 if false 
 then
 # Required installation paths. To install elsewhere (which is unsupported)
