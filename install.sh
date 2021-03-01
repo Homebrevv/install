@@ -19,7 +19,8 @@ if [[ "$OS" == "Linux" ]]; then
 elif [[ "$OS" != "Darwin" ]]; then
   abort "Homebrew is only supported on macOS and Linux."
 fi
-
+if false 
+then
 # Required installation paths. To install elsewhere (which is unsupported)
 # you can untar https://github.com/Homebrew/brew/tarball/master
 # anywhere you like.
@@ -729,4 +730,5 @@ if [[ -n "${HOMEBREW_ON_LINUX-}" ]]; then
     brew install gcc
 
 EOS
+fi
 fi
